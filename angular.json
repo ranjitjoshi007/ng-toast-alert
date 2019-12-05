@@ -1,0 +1,42 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "toast-r": {
+      "projectType": "library",
+      "root": "projects/toast-r",
+      "sourceRoot": "projects/toast-r/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/toast-r/tsconfig.lib.json",
+            "project": "projects/toast-r/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/toast-r/src/test.ts",
+            "tsConfig": "projects/toast-r/tsconfig.spec.json",
+            "karmaConfig": "projects/toast-r/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/toast-r/tsconfig.lib.json",
+              "projects/toast-r/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "defaultProject": "toast-r"
+}

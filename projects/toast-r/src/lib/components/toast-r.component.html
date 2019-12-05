@@ -1,0 +1,5 @@
+<div [ngClass]="{'toast-position-top-left': config.toastConfig.align=='topLeft', 'toast-position': config.toastConfig.align=='topRight', 'toast-position-bottom-left': config.toastConfig.align=='bottomLeft','toast-position-bottom-right': config.toastConfig.align=='bottomRight'}" *ngIf="0<tService.toastArray.length">
+    <ng-container *ngFor="let item of tService.toastArray; index as toastIndex">
+        <div [@FadeAnimation]="item['transition']" [class.toast-success]="item['type']=='success'" [class.toast-danger]="item['type']=='danger'" > {{item['message']}}</div>
+    </ng-container>
+</div>
