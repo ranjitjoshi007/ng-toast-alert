@@ -1,9 +1,9 @@
 .toast-success {color: #fff;background-color: #73b573;border-color: #c3e6cb;position: relative;padding: .75rem 1.25rem;margin-bottom: 1rem;border: 1px solid transparent;border-radius: .25rem;display: block;}
 .toast-danger {color: #fff;background-color: #f9a937;border-color: #f5c6cb;position: relative;padding: .75rem 1.25rem;margin-bottom: 1rem;border: 1px solid transparent;border-radius: .25rem;display: block;}
-.toast-position-top-right {position: fixed;top: 0;right: 0;}
-.toast-position-top-left {position: fixed;top: 0;left: 0;}
-.toast-position-bottom-left {position: fixed;bottom: 0;left: 0;}
-.toast-position-bottom-right {position: fixed;bottom: 0;right: 0;}
+.toast-position-top-right {position: fixed;top: 0;right: 0;z-index: 1200}
+.toast-position-top-left {position: fixed;top: 0;left: 0;z-index: 1200}
+.toast-position-bottom-left {position: fixed;bottom: 0;left: 0;z-index: 1200}
+.toast-position-bottom-right {position: fixed;bottom: 0;right: 0;z-index: 1200}
 .ng-toast-alert-wrapper{margin: .5em;z-index: 1200;width: 350px}
 button.close {padding: 0;background-color: transparent;border: 0;-webkit-appearance: none;-moz-appearance: none;appearance: none;}
 .ng-toast-alert-close {position: absolute;top: 0;right: 0;font-size: 1.5rem;color: #000000;background: transparent;border: transparent;cursor: pointer;}
