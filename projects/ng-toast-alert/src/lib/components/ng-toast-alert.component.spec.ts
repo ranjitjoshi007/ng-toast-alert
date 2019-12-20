@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ToastRComponent } from './toast-r.component';
+import { NgToastAlertComponent } from './ng-toast-alert.component';
 
-describe('ToastRComponent', () => {
-  let component: ToastRComponent;
-  let fixture: ComponentFixture<ToastRComponent>;
+describe('NgToastAlertComponent', () => {
+  let component: NgToastAlertComponent;
+  let fixture: ComponentFixture<NgToastAlertComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ToastRComponent ]
+      declarations: [ NgToastAlertComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ToastRComponent);
+    fixture = TestBed.createComponent(NgToastAlertComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

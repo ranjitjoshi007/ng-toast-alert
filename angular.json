@@ -3,33 +3,33 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "toast-r": {
+    "ng-toast-alert": {
       "projectType": "library",
-      "root": "projects/toast-r",
-      "sourceRoot": "projects/toast-r/src",
+      "root": "projects/ng-toast-alert",
+      "sourceRoot": "projects/ng-toast-alert/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/toast-r/tsconfig.lib.json",
-            "project": "projects/toast-r/ng-package.json"
+            "tsConfig": "projects/ng-toast-alert/tsconfig.lib.json",
+            "project": "projects/ng-toast-alert/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/toast-r/src/test.ts",
-            "tsConfig": "projects/toast-r/tsconfig.spec.json",
-            "karmaConfig": "projects/toast-r/karma.conf.js"
+            "main": "projects/ng-toast-alert/src/test.ts",
+            "tsConfig": "projects/ng-toast-alert/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-toast-alert/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/toast-r/tsconfig.lib.json",
-              "projects/toast-r/tsconfig.spec.json"
+              "projects/ng-toast-alert/tsconfig.lib.json",
+              "projects/ng-toast-alert/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

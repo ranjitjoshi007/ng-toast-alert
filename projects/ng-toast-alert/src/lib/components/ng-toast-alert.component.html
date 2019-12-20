@@ -1,0 +1,12 @@
+<div [ngClass]="{'toast-position-top-left': config.toastConfig.align=='topLeft', 'toast-position-top-right': config.toastConfig.align=='topRight', 'toast-position-bottom-left': config.toastConfig.align=='bottomLeft','toast-position-bottom-right': config.toastConfig.align=='bottomRight'}" *ngIf="0<toastService.toastArray.length">
+    <ng-container *ngFor="let item of toastService.toastArray; index as toastIndex">
+        <div>
+            <div [@FadeAnimation]="item['transition']" class="ng-toast-alert-wrapper" [class.toast-success]="item['type']=='success'" [class.toast-danger]="item['type']=='danger'" > 
+                <span class="ng-toast-alert-message">{{item['message']}}</span>
+                <button type="button" class="ng-toast-alert-close" (click)="RemoveCurrentToast(toastIndex)">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+    </ng-container>
+</div>

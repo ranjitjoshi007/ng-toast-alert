@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "toast-r": [
-        "dist/toast-r"
+      "ng-toast-alert": [
+        "dist/ng-toast-alert"
       ],
-      "toast-r/*": [
-        "dist/toast-r/*"
+      "ng-toast-alert/*": [
+        "dist/ng-toast-alert/*"
       ]
     }
   },
